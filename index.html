@@ -48,6 +48,7 @@
 
     <script type="text/javascript">
       const idempotency_key = uuidv4();
+      const new_idempotency_key = uuidv4();
       // Create and initialize a payment form object
       const paymentForm = new SqPaymentForm({
         // Initialize the payment form elements
@@ -137,7 +138,7 @@
               .catch((err) => {
                 console.error(err);
                 //Generate a new idempotency key for next payment attempt
-                idempotency_key = uuidv4();
+                idempotency_key = new_idempotency_key;
                 setPayButtonDisableState(false);
                 alert("Payment failed to complete!");
               });
