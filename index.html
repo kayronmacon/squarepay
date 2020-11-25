@@ -47,7 +47,7 @@
     <!-- TODO: Add script from step 1.1.3 -->
 
     <script type="text/javascript">
-      var idempotency_key = uuidv4();
+      const idempotency_key = uuidv4();
       // Create and initialize a payment form object
       const paymentForm = new SqPaymentForm({
         // Initialize the payment form elements
@@ -95,7 +95,6 @@
               console.error("Encountered errors:");
               errors.forEach(function (error) {
                 console.error("  " + error.message);
-                alert(error.message);
               });
               alert(
                 "Encountered errors, check browser developer console for more details"
