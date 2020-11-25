@@ -20,7 +20,7 @@ const port = 3000;
 
 // Set the Access Token
 const accessToken =
-  "EAAAEGzmZnxTIe9hUk8S1MJIipgjHw-hlwcQ0VkCtotAqcuf20pvx8FTvikEtxrc";
+  "EAAAEOccGLH95O4iwou6_2q2_RyJlrCKB-V1K__6Z6dWvL1Dej16TuNguB8Mcjcf";
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
