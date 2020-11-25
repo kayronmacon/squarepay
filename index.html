@@ -137,6 +137,7 @@
               .catch((err) => {
                 console.error(err);
                 //Generate a new idempotency key for next payment attempt
+                idempotency_key = uuidv4();
                 setPayButtonDisableState(false);
                 alert("Payment failed to complete!");
               });
